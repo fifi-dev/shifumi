@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 5% 10%;
+    background-color: rgb(16, 16, 24);
+    color: white;
+    font-family: "DynaPuff", system-ui;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#game-area{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 50px;
+    align-items: center;
+}
+
+#game-area div{
+    width: 100%;
+    height: fit-content;
+    min-height: 150px;
+    background-color: rgb(223, 223, 253);
+    padding: 100px 20px;
+    position: relative;
+    transition: all 0.5 ease-out;
+}
+
+#game-area div:last-child{
+    background-color: white;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#game-area h2{
+    color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+#choices button, #reset{
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: "DynaPuff", system-ui;
+}
+
+#result, #score{
+    text-align: center;
+}
+
+#reset {
+    background-color: rgb(255, 219, 219);
+}

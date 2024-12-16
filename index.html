@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/shifumi.css">
+    <title>Shifumi</title>
+</head>
+<body>
+    <div class="flex">
+        <h1>Jeu Pierre-Feuille-Ciseaux</h1>
+    
+        <!-- Bouton de réinitialisation -->
+        <button id="reset">Réinitialiser</button>
+    </div>
+
+    <!-- Affichage des choix visuels -->
+    <div id="game-area">
+        <div id="computer-choice" class="choice-display">
+            <h2>Ordinateur</h2>
+            <img id="computer-image" src="" alt="Choix de l'ordinateur">
+        </div>
+        <div id="player-choice" class="choice-display">
+            <h2>Joueur</h2>
+            <img id="player-image" src="" alt="Choix du joueur">
+        </div>
+    </div>
+
+    <!-- Section des choix -->
+    <div id="choices">
+        <button id="rock">Pierre</button>
+        <button id="paper">Feuille</button>
+        <button id="scissors">Ciseaux</button>
+    </div>
+
+    <!-- Résultat et score -->
+    <h2 id="result"></h2>
+    <h3 id="score">Score : Joueur 0 - Ordinateur 0</h3>
+
+    <!-- Pour lier notre js au htlm -->
+    <script src="/assets/js/shifumi.js"></script>
+</body>
+</html>
